@@ -5,7 +5,7 @@
     <div class="setion">
       <img class="sala" src="imagenes/administrador.png">
       <h2>ADMINISTRADOR</h2>
-      <p>Seccion de ingreso para administradores</p>
+      <p>Seccion de ingreso para administradoraaaaaaaaaaaaaaas</p>
       <a href="/login"><button class="buttonReservar">Ingresar </button></a>
     </div>
     <div class="setion">
@@ -16,5 +16,5 @@
     </div>
   </div>
 
-    
-@endsection    
+
+@endsection
