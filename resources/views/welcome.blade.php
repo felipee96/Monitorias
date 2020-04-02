@@ -11,7 +11,7 @@
     <div class="setion">
       <img class="sala" src="imagenes/monitor.png">
       <h2>USUARIO</h2>
-      <p>Seccion de ingreso para monitores</p>
+      <p>Seccion de ingreso para monitores felipe</p>
       <a href="/login"><button class="buttonReservar">Ingresar </button></a>
     </div>
   </div>
