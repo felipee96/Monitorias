@@ -1,89 +1,76 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('plantilla')
+@section('title', 'Administrador')
+<link href="{{asset('css/iconos.css')}}" rel='stylesheet'/>
 
-        <title>Control Monitorias</title>
+@section('contenido')
+<div class="row row-cols-1 row-cols-md-3 mt-5">
+  
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="imagenes/b.png" class="card-img-top" style="height: 10rem; width: 21rem;">
+          <div class="col text-center">
+            <a href="#" class="btn btn-success">Añadir</a>
+            <a href="#" class="btn btn-success">Ver Monitores</a>
+          </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="imagenes/reporte.png" class="card-img-top" style="height: 10rem; width: 21rem;">
+          <div class="col text-center">
+            <a href="#" class="btn btn-success">Ver Reportes</a>
+            <a href="#" class="btn btn-success">Crear Reportes</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="imagenes/calendar.png" class="card-img-top" style="height: 10rem; width: 21rem;">
+          <div class="col text-center">
+            <a href="#" class="btn btn-success">Añadir</a>
+            <a href="#" class="btn btn-success">Ver Horarios</a>
+          </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #d1f5d3;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="imagenes/sede.png" class="card-img-top" style="height: 10rem; width: 21rem;">
+          <div class="col text-center">
+            <a href="#" class="btn btn-success">Añadir</a>
+            <a href="#" class="btn btn-success">Ver Sedes</a>
+          </div>
+      </div>
+    </div>
+  </div>
 
-            
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="imagenes/sala.png" class="card-img-top" style="height: 10rem; width: 21rem;">
+          <div class="col text-center">
+            <a href="#" class="btn btn-success">Añadir</a>
+            <a href="#" class="btn btn-success">Ver Salas</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="imagenes/salir.png" class="card-img-top" style="height: 10rem; width: 21rem;">
+      </div>
+    </div>
+  </div>
 
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #d63447;
-                padding: 0 25px;
-                font-size: 15px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    ADMINISTRADOR
-                </div>
-
-                <div class="links">
-                    <a href="/registroMonitor">REGISTRAR MONITORES</a>
-                    <a href="/administrador">REGISTRAR SALAS</a>
-                    <a href="/administrador">REGISTRAR HORARIOS</a>
-                    <a href="/monitor">REPORTES</a>
-                    
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@endsection

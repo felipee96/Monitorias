@@ -17,10 +17,11 @@
 <script src="https://kit.fontawesome.com/db4851e8ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>CONTROL DE MONITORIAS</h1>
-    <!-- aca incluyo el navbar que esta en la carpeta plantilla el archivo phead -->
-    <div class="contenedorPrueba">
+    <div class="container mt-5">
+        <h1 class="text-center titulo">CONTROL DE MONITORIAS</h1>
+        <div>
         @yield('contenido')
+        </div>
     </div>
     
 </body>

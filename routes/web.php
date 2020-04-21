@@ -27,6 +27,9 @@ Route::get('/registroMonitor', function () {
 Route::get('/controlSala', function () {
     return view('controlSala');
 });
+Route::get('/prueba', function() {
+    return view('prueba');
+})->name('prueba');
 
 Auth::routes();
 
